@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="so">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda | Website.COM</title>
+    <link rel="stylesheet" href="websit.css">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* General Colors */
+        :root {
+            --main-color: #4CAF50;
+            --dark: #1c1c1c;
+            --light: #f9f9f9;
+        }
+
+        /* Header */
+        header {
+            background: var(--dark);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 60px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--main-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('https://images.unsplash.com/photo-1508264165352-258859e62245?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            background-color: #8f9c90;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: var(--main-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #3b9141;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 60px;
+            text-align: center;
+        }
+
+        .about,
+        .contact {
+            background: var(--light);
+            color: #333;
+        }
+
+        /* Projects */
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="logo">🐼 Panda</div>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTECT-US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>Ku soo dhowow Website-ka Panda</h1>
+        <p>Naqshadeeye & Hal-abuur jecel tignoolajiyada iyo farshaxanka.</p>
+        <a href="#projects" class="btn">Eeg Shaqooyinkayga</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>ABOUT ME</h2><BR></BR>
+
+        <p>Waxaan ahay Panda — qof xiiseeya web design, sawir-qaadis, iyo hal-abuurka dijitaalka. <BR></BR>
+            Waxaan jecelahay inaan abuuro waxyaabo qurux badan oo dadka farxad geliya. <BR></BR>
+            Hadafkeygu waa inaan keeno naqshad casri ah oo fudud.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>PROJECTS</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80"
+                    alt="Project 1">
+                <h3>Web Design</h3>
+                <p>Naqshad casri ah oo loo sameeyay shirkad cusub.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80"
+                    alt="Project 2">
+                <h3>App Concept</h3>
+                <p>App mobile ah oo loogu talagalay bulshada hal-abuurka.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80"
+                    alt="Project 3">
+                <h3>Brand Design</h3>
+                <p>Hal-abuur logo iyo aqoonsi ganacsi oo cusub.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg" alt="Project 3">
+                <h3>VIDEO EDITER</h3>
+                <p>video editer gacanta ka xiran.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://images.pexels.com/photos/108148/pexels-photo-108148.jpeg" alt="Project 3">
+                <h3>PHOTO-GRAPHER</h3>
+                <p>photo-grapher gacan macaan.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" alt="Project 3">
+                <h3>GAME DEVLOPER</h3>
+                <p>game devloper gacantu ufadhido.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>CONTECT-ME</h2><br>
+        <p>Waxaad ila soo xiriiri kartaa email ahaan:<br>
+        <a href="realpanda2025@gmail.com">pandapanda2025@gmail.com</a>
+        </p>
+        <p>Ama raac baraha bulshada hoos ku qoran 👇</p>
+        <div class="socials">
+            <a href="#">🐦r Twitte</a>
+            <a href="https://www.tiktok.com/@reallpanda6?is_from_webapp=1&sender_device=pc">📸 TIKTOK</a>
+            <a href="#">💼 DISCORD</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Panda | Dhamaan xuquuqdu way xafidan tahay.</p>
+    </footer>
+</body>
+
+</html>
